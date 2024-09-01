@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-
+// 엔드포인트들 정의하는 곳
 @RestController
 @RequiredArgsConstructor
 public class TodoController {

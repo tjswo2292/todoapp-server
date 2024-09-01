@@ -5,6 +5,7 @@ import com.example.todoapp.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+// controller에서 사용할 서비스 로직들
 @Service
 public class TodoService {
     @Autowired

@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-// 도메인은 어떤 역할을 하기 위해 존재하는거지?
+// DB에 연동하고 스키마 정도로 이해하면 될듯
 // 디비에 저장되는 로직 : 디비에 저장하기 위해서는 이 클래스와 디비와 맵핑 시켜줘야한다.
 @Entity(name = "Todo")
 @Table(name = "todo")
