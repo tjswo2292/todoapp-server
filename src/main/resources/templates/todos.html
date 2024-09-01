@@ -1,0 +1,21 @@
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <h1>Todo App</h1>
+<!--    action은 api url임 : Post 방식으로 /addTodo라는 엔드포인트에 요청을 보내겠다는거-->
+    <form method="post" action="/addTodo">
+        <input type="text" name="todo">
+        <input type="submit" name="Add Todo" />
+    </form>
+    <hr/>
+    <ul>
+        <li th:each="todo : ${todos}">
+            <form method="post" action="/patchTodo">
+                <input type="text" name="patchTodoId" th:value="${todo.id}"/>
+                <input type="text" name="patchTodo" th:value="${todo.description}" />
+                <button>제출</button>
+            </form>
+<!--            <span th:text="${todo.description}"></span>-->
+        </li>
+    </ul>
+</html>
